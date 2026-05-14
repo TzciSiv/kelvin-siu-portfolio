@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelvin Siu | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="aurora"></div>
+    <div class="scan-glow"></div>
+    <div class="data-rain"></div>
+    <div class="traffic-lanes">
+      <span class="flyer f1"></span>
+      <span class="flyer f2"></span>
+      <span class="flyer f3"></span>
+      <span class="flyer f4"></span>
+      <span class="flyer f5"></span>
+    </div>
+    <div class="holo-pulses">
+      <span class="pulse p1"></span>
+      <span class="pulse p2"></span>
+      <span class="pulse p3"></span>
+    </div>
+    <div class="name-sign">Kelvin Siu</div>
+    <div class="beam beam-one"></div>
+    <div class="beam beam-two"></div>
+    <div class="beam beam-three"></div>
+    <div class="beam beam-four"></div>
+    <div class="skyline skyline-back">
+      <span class="tower t1"></span>
+      <span class="tower t2"></span>
+      <span class="tower t3"></span>
+      <span class="tower t4"></span>
+      <span class="tower t5"></span>
+      <span class="tower t6"></span>
+      <span class="tower t7"></span>
+      <span class="tower t8"></span>
+      <span class="tower t9"></span>
+    </div>
+    <div class="skyline skyline-front">
+      <span class="block b1"></span>
+      <span class="block b2"></span>
+      <span class="block b3"></span>
+      <span class="block b4"></span>
+      <span class="block b5"></span>
+      <span class="block b6"></span>
+      <span class="block b7"></span>
+      <span class="block b8"></span>
+      <span class="block b9"></span>
+      <span class="block b10"></span>
+      <span class="block b11"></span>
+      <span class="block b12"></span>
+    </div>
+    <div class="foreground"></div>
+  </div>
+
+  <header class="site-header" aria-label="Site header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="is-active" href="projects.html" data-page="projects" aria-current="page">Projects</a>
+      <a href="index.html#about" data-section="about">About</a>
+      <a href="index.html#skills" data-section="skills">Skills</a>
+      <a href="index.html#experience" data-section="experience">Experience</a>
+      <a href="index.html#contact" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="resume-shell project-page">
+    <section class="page-hero">
+      <p class="eyebrow">Project Archive</p>
+      <h1>Projects</h1>
+      <p>
+        A growing collection of software, AI, and immersive systems work. Each project
+        can hold screenshots, GitHub links, and a clear tech stack as the portfolio expands.
+      </p>
+    </section>
+
+    <section class="panel projects-panel">
+      <div class="projects-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Featured Projects</h2>
+        </div>
+        <p>
+          Short case-study snapshots focused on what I built, what was difficult,
+          and what I learned.
+        </p>
+      </div>
+      <div class="project-grid project-grid-wide">
+        <article class="project-card">
+          <div class="project-body">
+            <p class="project-kicker">AI automation</p>
+            <h3>AI Meeting Action Agent</h3>
+            <p class="project-summary">
+              A full-stack meeting assistant that turns audio transcripts into private
+              summaries, action items, risks, and Word reports.
+            </p>
+            <ul class="project-points project-story">
+              <li><strong>Built</strong><span>FastAPI routes for auth, transcription, meeting history, action CRUD, and exports.</span></li>
+              <li><strong>Approach</strong><span>Split GPT calls for summaries and action extraction so task boards stayed cleaner.</span></li>
+              <li><strong>Challenge</strong><span>Balanced flexible AI output with predictable saved database state.</span></li>
+              <li><strong>Learned</strong><span>AI products work better when outputs are reviewable instead of fully automatic.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>FastAPI</span>
+                <span>SQLite</span>
+                <span>OpenAI</span>
+                <span>JWT</span>
+              </div>
+              <a class="github-link" href="https://github.com/TzciSiv/ai-meeting-action-agent" target="_blank" rel="noreferrer" aria-label="Open AI Meeting Action Agent on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <a class="project-video-link" href="https://www.youtube.com/watch?v=7KSfB6dQjrE" target="_blank" rel="noreferrer" aria-label="Watch Video Demonstration: AI Meeting Action Agent Walkthrough on YouTube">
+              <span class="video-thumb" aria-hidden="true"></span>
+              <span class="video-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5.14v13.72L19 12 8 5.14Z"></path>
+                </svg>
+              </span>
+              <span class="video-copy">
+                <span>Video Demonstration</span>
+                AI Meeting Action Agent Walkthrough
+              </span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <p class="project-kicker">Computer vision</p>
+            <h3>Food Segmentation & Calorie Estimation</h3>
+            <p class="project-summary">
+              A food-image pipeline that estimates portions from segmentation masks and
+              a reference-card scale.
+            </p>
+            <ul class="project-points project-story">
+              <li><strong>Built</strong><span>A YOLO segmentation workflow for single-image food portion estimation.</span></li>
+              <li><strong>Contribution</strong><span>Created a custom dataset and manually labeled food masks for training.</span></li>
+              <li><strong>Result</strong><span>Reached about 0.95 mask mAP on the project dataset.</span></li>
+              <li><strong>Learned</strong><span>Model accuracy and real calorie accuracy need separate validation.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>YOLO</span>
+                <span>Python</span>
+                <span>LLM</span>
+                <span>Computer Vision</span>
+              </div>
+              <a class="github-link" href="https://github.com/TzciSiv/food-segmentation-and-measurement" target="_blank" rel="noreferrer" aria-label="Open Food Segmentation and Calorie Estimation on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-shot food-shot" aria-label="Food segmentation project screenshot mockup">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <p class="project-kicker">Medical imaging</p>
+            <h3>Tumor Image Segmentation</h3>
+            <p class="project-summary">
+              A tumor-region detection project using a U-Net segmentation model with a
+              ResNet-50 encoder.
+            </p>
+            <ul class="project-points project-story">
+              <li><strong>Built</strong><span>A PyTorch preprocessing and training pipeline for medical image masks.</span></li>
+              <li><strong>Result</strong><span>Reached about 95% region-identification accuracy on the project dataset.</span></li>
+              <li><strong>Challenge</strong><span>Segmentation quality depended heavily on label consistency and image quality.</span></li>
+              <li><strong>Learned</strong><span>Medical AI metrics need careful interpretation beyond headline accuracy.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>PyTorch</span>
+                <span>U-Net</span>
+                <span>ResNet-50</span>
+                <span>Medical Imaging</span>
+              </div>
+              <a class="github-link" href="https://github.com/TzciSiv/Tumor-Image-Segmentation" target="_blank" rel="noreferrer" aria-label="Open Tumor Image Segmentation on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-shot segment-shot" aria-label="Tumor segmentation project screenshot mockup">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <p class="project-kicker">Deep learning</p>
+            <h3>Tumor Image Classification</h3>
+            <p class="project-summary">
+              A CNN classification workflow for evaluating malignant and benign tumor
+              image predictions.
+            </p>
+            <ul class="project-points project-story">
+              <li><strong>Built</strong><span>Preprocessing, loading, and k-fold cross-validation workflows in PyTorch.</span></li>
+              <li><strong>Result</strong><span>Achieved about 90% classification accuracy during model evaluation.</span></li>
+              <li><strong>Challenge</strong><span>Preventing overfitting mattered more than adding model complexity.</span></li>
+              <li><strong>Learned</strong><span>Validation design is stronger evidence than a single final accuracy number.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>PyTorch</span>
+                <span>CNN</span>
+                <span>Python</span>
+                <span>K-Fold CV</span>
+              </div>
+              <a class="github-link" href="https://github.com/TzciSiv/Tumor-Image-Classification" target="_blank" rel="noreferrer" aria-label="Open Tumor Image Classification on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-shot classify-shot" aria-label="Tumor classification project screenshot mockup">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
