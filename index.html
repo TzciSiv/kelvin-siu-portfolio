@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelvin Siu | Resume</title>
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -69,12 +70,16 @@
   <main class="resume-shell">
     <section class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow">Computer Science | Full Stack | AI | VR</p>
+        <p class="eyebrow">Computer Science | Full Stack | AI</p>
         <h1>Kelvin Siu</h1>
         <p class="hero-intro">
           I build practical software across web systems, machine learning, and immersive
           3D experiences, with a focus on clean implementation and useful results.
         </p>
+        <div class="hero-actions" aria-label="Primary links">
+          <a class="section-link primary-link" href="projects.html">View Projects</a>
+          <a class="section-link secondary-link" href="#contact">Contact</a>
+        </div>
       </div>
       <div class="avatar-card" aria-label="Kelvin Siu avatar">
         <img class="avatar-image" src="assets/avatar-kelvin.png" alt="Stylized avatar of Kelvin Siu">
@@ -100,25 +105,76 @@
     <section class="grid">
       <article class="panel skills" id="skills">
         <h2>Skills</h2>
-        <div class="chips">
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>C++</span>
-          <span>C#</span>
-          <span>MySQL</span>
-          <span>SQL Server</span>
-          <span>AWS</span>
-          <span>Unity</span>
-          <span>APIs</span>
-          <span>Machine Learning</span>
-          <span>Deep Learning</span>
+        <div class="skill-groups">
+          <section class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-list">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>C++</span>
+              <span>C#</span>
+              <span>x86-64 Assembly</span>
+              <span>SQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </section>
+          <section class="skill-group">
+            <h3>Frameworks</h3>
+            <div class="skill-list">
+              <span>React</span>
+              <span>FastAPI</span>
+              <span>Pyramid</span>
+              <span>Jinja2</span>
+              <span>Unity</span>
+              <span>OpenXR</span>
+            </div>
+          </section>
+          <section class="skill-group">
+            <h3>Design</h3>
+            <div class="skill-list">
+              <span>UX/UI Design</span>
+              <span>Responsive Design</span>
+            </div>
+          </section>
+          <section class="skill-group">
+            <h3>Developer Tools</h3>
+            <div class="skill-list">
+              <span>AWS</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>GitHub Actions</span>
+              <span>MySQL</span>
+              <span>SQLite</span>
+              <span>Vite</span>
+            </div>
+          </section>
+          <section class="skill-group">
+            <h3>Backend &amp; APIs</h3>
+            <div class="skill-list">
+              <span>REST APIs</span>
+              <span>JWT</span>
+              <span>SMTP</span>
+            </div>
+          </section>
+          <section class="skill-group">
+            <h3>Libraries</h3>
+            <div class="skill-list">
+              <span>PyTorch</span>
+              <span>YOLO</span>
+              <span>OpenAI API</span>
+              <span>SQLAlchemy</span>
+              <span>Pydantic</span>
+              <span>scikit-learn</span>
+              <span>U-Net</span>
+              <span>ResNet-50</span>
+            </div>
+          </section>
         </div>
       </article>
 
-      <article class="panel">
+      <article class="panel interests-panel">
         <h2>Interests</h2>
         <div class="interest-list">
           <span>Computer Vision</span>
@@ -144,8 +200,8 @@
       <article class="panel">
         <h2>Certifications</h2>
         <ul class="plain-list">
-          <li>AWS Certified Cloud Practitioner, Amazon Web Services | January 2025</li>
-          <li>Microsoft Office Specialist: Expert, Microsoft Corporation | May 2023</li>
+          <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/bde01372a55f4d6680331e376bc400aa" target="_blank" rel="noreferrer">AWS Certified Cloud Practitioner</a>, Amazon Web Services | January 2025</li>
+          <li><a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=425&cvid=XgqIyC0mG1aGMaocAeMxoQ==" target="_blank" rel="noreferrer">Microsoft Office Specialist: Expert</a>, Microsoft Corporation | May 2023</li>
         </ul>
       </article>
     </section>
@@ -173,11 +229,11 @@
         </div>
         <p class="stack">C# | Unity | OpenXR | GitHub | STL/CSV</p>
         <ul>
-          <li>Contributed six PRs to a Unity/OpenXR mining app for terrain, drill-hole, and copper inspection.</li>
-          <li>Built the main menu flow so users could choose when to enter VR.</li>
-          <li>Mapped assay intervals onto 3D drill-hole cylinders with copper gradients, labels, and a value legend.</li>
-          <li>Improved terrain transparency, drill-hole scale, and scene alignment after feedback showed color alone was unclear.</li>
-          <li>Challenge: learned useful VR needs labels, scale, and feedback loops, not only 3D geometry.</li>
+          <li>Contributed 6 PRs to a Unity/OpenXR mining app for terrain, drill-hole, and copper inspection.</li>
+          <li>Coordinated with teammates through GitHub pull requests, feedback sessions, and shared Unity integration work.</li>
+          <li>Visualized drill holes from CSV files in 3D with color labeling based on mineral content.</li>
+          <li>Refined terrain transparency, drill-hole scale, and alignment after feedback showed color needed context.</li>
+          <li>Learned to test Unity builds regularly because VR performance can differ from the editor.</li>
         </ul>
       </article>
 

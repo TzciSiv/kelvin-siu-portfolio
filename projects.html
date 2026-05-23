@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelvin Siu | Projects</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="projects.css">
 </head>
 <body>
   <div class="scene" aria-hidden="true">
@@ -90,26 +91,28 @@
       <div class="project-grid project-grid-wide">
         <article class="project-card">
           <div class="project-body">
-            <p class="project-kicker">AI automation</p>
+            <p class="project-kicker">Production AI ops</p>
             <h3>AI Meeting Action Agent</h3>
             <p class="project-summary">
-              A full-stack meeting assistant that turns audio transcripts into private
-              summaries, action items, risks, and Word reports.
+              A Dockerized meeting assistant that turns transcripts, audio, and DOCX
+              imports into governed AI workflows, action boards, RAG answers, and Word reports.
             </p>
             <ul class="project-points project-story">
-              <li><strong>Built</strong><span>FastAPI routes for auth, transcription, meeting history, action CRUD, and exports.</span></li>
-              <li><strong>Approach</strong><span>Split GPT calls for summaries and action extraction so task boards stayed cleaner.</span></li>
-              <li><strong>Challenge</strong><span>Balanced flexible AI output with predictable saved database state.</span></li>
-              <li><strong>Learned</strong><span>AI products work better when outputs are reviewable instead of fully automatic.</span></li>
+              <li><strong>Project</strong><span>Built a meeting workspace that generates summaries, action items, and follow-up answers with evidence.</span></li>
+              <li><strong>How</strong><span>Designed React and FastAPI workflows, a pgvector database, LangGraph, LangChain, and OpenAI analysis.</span></li>
+              <li><strong>Result</strong><span>Cut transcript rereading time by about <b>60%</b> with RAG answers, evidence snippets, and editable action boards.</span></li>
+              <li><strong>Challenge</strong><span>Moved beyond a single prompt by adding async ingestion jobs, worker heartbeats, and retry-aware pipeline state.</span></li>
+              <li><strong>Learned</strong><span>Made AI output more trustworthy with audit events, safe logging, SLA views, and visible evidence.</span></li>
             </ul>
             <div class="project-footer">
               <div class="project-meta">
                 <span>React</span>
                 <span>TypeScript</span>
                 <span>FastAPI</span>
-                <span>SQLite</span>
+                <span>Postgres/pgvector</span>
+                <span>LangGraph</span>
+                <span>Kafka</span>
                 <span>OpenAI</span>
-                <span>JWT</span>
               </div>
               <a class="github-link" href="https://github.com/TzciSiv/ai-meeting-action-agent" target="_blank" rel="noreferrer" aria-label="Open AI Meeting Action Agent on GitHub">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -120,7 +123,7 @@
             </div>
           </div>
           <div class="project-visual">
-            <a class="project-video-link" href="https://www.youtube.com/watch?v=7KSfB6dQjrE" target="_blank" rel="noreferrer" aria-label="Watch Video Demonstration: AI Meeting Action Agent Walkthrough on YouTube">
+            <a class="project-video-link" href="https://www.youtube.com/watch?v=N-ZjkUryrOc" target="_blank" rel="noreferrer" aria-label="Watch Video Demonstration: AI Meeting Action Agent: Async Workflows &amp; Production AI Ops Controls on YouTube">
               <span class="video-thumb" aria-hidden="true"></span>
               <span class="video-play" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
@@ -129,7 +132,54 @@
               </span>
               <span class="video-copy">
                 <span>Video Demonstration</span>
-                AI Meeting Action Agent Walkthrough
+                AI Meeting Action Agent: Async Workflows &amp; Production AI Ops Controls
+              </span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <p class="project-kicker">Object detection</p>
+            <h3>Person, Car, Dog &amp; Bicycle Detector</h3>
+            <p class="project-summary">
+              A Flask web app that serves a YOLO detector for common VOC objects and
+              returns annotated predictions from uploaded images.
+            </p>
+            <ul class="project-points project-story">
+              <li><strong>Project</strong><span>Built an object-detection demo for <b>person</b>, <b>car</b>, <b>dog</b>, and <b>bicycle</b> recognition.</span></li>
+              <li><strong>Result</strong><span>Reached <b>0.9497 mAP@50</b>, <b>0.9368 precision</b>, and <b>0.9120 recall</b> after 100 training epochs.</span></li>
+              <li><strong>How</strong><span>Fine-tuned YOLO on a VOC-format dataset with <b>33,290 images</b> across train, validation, and test splits.</span></li>
+              <li><strong>Challenge</strong><span>Kept the app reproducible by separating model weights, uploaded images, prediction outputs, and Docker runtime setup.</span></li>
+              <li><strong>Learned</strong><span>Evaluated detection quality with mAP, PR/F1 curves, confusion matrices, and visual prediction samples before trusting the demo.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>YOLO</span>
+                <span>Flask</span>
+                <span>Python</span>
+                <span>Docker</span>
+                <span>Computer Vision</span>
+              </div>
+              <a class="github-link" href="https://github.com/TzciSiv/Person-Car-Dog-Bicycle-Detector/tree/main" target="_blank" rel="noreferrer" aria-label="Open Person, Car, Dog and Bicycle Detector on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <a class="project-video-link" href="https://www.youtube.com/watch?v=2yfvwid7otA" target="_blank" rel="noreferrer" aria-label="Watch Video Demonstration: Person, Car, Dog and Bicycle Detector on YouTube">
+              <span class="video-thumb" style="--video-thumb: url('https://img.youtube.com/vi/2yfvwid7otA/hqdefault.jpg');" aria-hidden="true"></span>
+              <span class="video-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5.14v13.72L19 12 8 5.14Z"></path>
+                </svg>
+              </span>
+              <span class="video-copy">
+                <span>Video Demonstration</span>
+                Person, Car, Dog &amp; Bicycle Detector
               </span>
             </a>
           </div>
@@ -138,16 +188,17 @@
         <article class="project-card">
           <div class="project-body">
             <p class="project-kicker">Computer vision</p>
-            <h3>Food Segmentation & Calorie Estimation</h3>
+            <h3>Food Segmentation &amp; Calorie Estimation</h3>
             <p class="project-summary">
               A food-image pipeline that estimates portions from segmentation masks and
               a reference-card scale.
             </p>
             <ul class="project-points project-story">
-              <li><strong>Built</strong><span>A YOLO segmentation workflow for single-image food portion estimation.</span></li>
-              <li><strong>Contribution</strong><span>Created a custom dataset and manually labeled food masks for training.</span></li>
-              <li><strong>Result</strong><span>Reached about 0.95 mask mAP on the project dataset.</span></li>
-              <li><strong>Learned</strong><span>Model accuracy and real calorie accuracy need separate validation.</span></li>
+              <li><strong>Project</strong><span>Tackled calorie-estimation errors caused by photos missing real-world portion size.</span></li>
+              <li><strong>How</strong><span>Trained YOLO11x-seg to segment food and a playing-card reference.</span></li>
+              <li><strong>Result</strong><span>Achieved about 0.95 box and mask mAP on the project dataset.</span></li>
+              <li><strong>Challenge</strong><span>Collapsed 103 food classes and 52 card identities into two usable labels.</span></li>
+              <li><strong>Learned</strong><span>Paired vision measurement with LLM reasoning instead of asking AI to guess size.</span></li>
             </ul>
             <div class="project-footer">
               <div class="project-meta">
@@ -182,10 +233,11 @@
               ResNet-50 encoder.
             </p>
             <ul class="project-points project-story">
-              <li><strong>Built</strong><span>A PyTorch preprocessing and training pipeline for medical image masks.</span></li>
-              <li><strong>Result</strong><span>Reached about 95% region-identification accuracy on the project dataset.</span></li>
-              <li><strong>Challenge</strong><span>Segmentation quality depended heavily on label consistency and image quality.</span></li>
-              <li><strong>Learned</strong><span>Medical AI metrics need careful interpretation beyond headline accuracy.</span></li>
+              <li><strong>Project</strong><span>Built a medical-image segmentation pipeline to identify tumor regions pixel by pixel.</span></li>
+              <li><strong>How</strong><span>Implemented U-Net-style decoder with ResNet-based variants and CSV image-mask loading.</span></li>
+              <li><strong>Result</strong><span>Reached about 95% validation accuracy across folds, with Dice and IoU tracking.</span></li>
+              <li><strong>Challenge</strong><span>Saved prediction masks for visual inspection because accuracy alone can hide segmentation quality.</span></li>
+              <li><strong>Learned</strong><span>Evaluated false positives and false negatives to understand medical AI errors more carefully.</span></li>
             </ul>
             <div class="project-footer">
               <div class="project-meta">
@@ -220,10 +272,11 @@
               image predictions.
             </p>
             <ul class="project-points project-story">
-              <li><strong>Built</strong><span>Preprocessing, loading, and k-fold cross-validation workflows in PyTorch.</span></li>
-              <li><strong>Result</strong><span>Achieved about 90% classification accuracy during model evaluation.</span></li>
-              <li><strong>Challenge</strong><span>Preventing overfitting mattered more than adding model complexity.</span></li>
-              <li><strong>Learned</strong><span>Validation design is stronger evidence than a single final accuracy number.</span></li>
+              <li><strong>Project</strong><span>Built a PyTorch CNN to classify tumor images as benign or malignant.</span></li>
+              <li><strong>How</strong><span>Created CSV-based data loading, binary label mapping, and k-fold validation.</span></li>
+              <li><strong>Result</strong><span>Achieved about 88.6% average validation accuracy across folds.</span></li>
+              <li><strong>Challenge</strong><span>Added AUROC-based early stopping to reduce overfitting during training.</span></li>
+              <li><strong>Learned</strong><span>Compared accuracy, precision, recall, F1, ROC-AUC, and PR-AUC before trusting results.</span></li>
             </ul>
             <div class="project-footer">
               <div class="project-meta">
