@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelvin Siu | Projects</title>
+  <meta name="description" content="Software and AI projects by Kelvin Siu: a multiplayer AI D&amp;D platform, a meeting action agent, and applied computer vision. View demos, source code, and technical details.">
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="projects.css">
 </head>
@@ -72,8 +73,8 @@
       <p class="eyebrow">Project Archive</p>
       <h1>Projects</h1>
       <p>
-        A growing collection of software, AI, and immersive systems work. Each project
-        can hold screenshots, GitHub links, and a clear tech stack as the portfolio expands.
+        Software, AI, and immersive systems I have built, from multiplayer storytelling
+        and meeting automation to computer vision. Explore the demos, source code, and technical details.
       </p>
     </section>
 
@@ -91,17 +92,65 @@
       <div class="project-grid project-grid-wide">
         <article class="project-card">
           <div class="project-body">
+            <p class="project-kicker">Multiplayer AI game platform</p>
+            <h3>AI D&amp;D Platform</h3>
+            <ul class="project-points project-story">
+              <li><strong>Project</strong><span>Built a multiplayer D&amp;D platform with graphical character creation, live sessions, and an AI game host that generates dynamic stories.</span></li>
+              <li><strong>Result</strong><span>Reduced LLM context usage by approximately <b>90%</b> by retrieving relevant campaign memories with pgvector instead of sending full conversation histories.</span></li>
+              <li><strong>How</strong><span>Developed an ASP.NET Core game engine integrating Supabase, OpenAI workflows, and PostgreSQL.</span></li>
+              <li><strong>Security</strong><span>Protected multiplayer game state with a server-authoritative pipeline, JWT authentication, row-level security, and validated LLM outputs.</span></li>
+              <li><strong>Deployment</strong><span>Deployed the full platform to Azure Container Apps, taking it from system design through production.</span></li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-meta">
+                <span>ASP.NET Core</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>pgvector</span>
+                <span>OpenAI</span>
+                <span>Azure Container Apps</span>
+              </div>
+              <div class="project-links" role="group" aria-label="AI D&amp;D Platform project links">
+                <a class="github-link" href="https://github.com/TzciSiv/ai-tabletop-rpg-host" target="_blank" rel="noreferrer" aria-label="Open AI D&amp;D Platform on GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.97c.85 0 1.7.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a class="github-link live-link" href="https://aittrpg-app.kindmushroom-faf364cc.westus2.azurecontainerapps.io/campaigns" target="_blank" rel="noreferrer" aria-label="Open the live AI D&amp;D Platform">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+                  </svg>
+                  Live App
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-visual">
+            <a class="project-video-link" href="https://www.youtube.com/watch?v=cUbBd-EtOU8" target="_blank" rel="noreferrer" aria-label="Watch the AI D&amp;D Platform video demonstration on YouTube">
+              <span class="video-thumb" style="--video-thumb: url('https://img.youtube.com/vi/cUbBd-EtOU8/hqdefault.jpg');" aria-hidden="true"></span>
+              <span class="video-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5.14v13.72L19 12 8 5.14Z"></path>
+                </svg>
+              </span>
+              <span class="video-copy">
+                <span>Video Demonstration</span>
+                AI D&amp;D Platform
+              </span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
             <p class="project-kicker">Production AI ops</p>
             <h3>AI Meeting Action Agent</h3>
-            <p class="project-summary">
-              A Dockerized meeting assistant that turns transcripts, audio, and DOCX
-              imports into governed AI workflows, action boards, RAG answers, and Word reports.
-            </p>
             <ul class="project-points project-story">
-              <li><strong>Project</strong><span>Built a meeting workspace that generates summaries, action items, and follow-up answers with evidence.</span></li>
+              <li><strong>Project</strong><span>Built a workspace that turns audio, documents, and transcripts into meeting summaries, decisions, risks, and action items.</span></li>
               <li><strong>How</strong><span>Designed React and FastAPI workflows, a pgvector database, LangGraph, LangChain, and OpenAI analysis.</span></li>
-              <li><strong>Result</strong><span>Cut transcript rereading time by about <b>60%</b> with RAG answers, evidence snippets, and editable action boards.</span></li>
-              <li><strong>Challenge</strong><span>Moved beyond a single prompt by adding async ingestion jobs, worker heartbeats, and retry-aware pipeline state.</span></li>
+              <li><strong>Result</strong><span>Grounded follow-up answers in relevant transcript evidence using OpenAI embeddings and pgvector retrieval, with editable action boards and downloadable reports.</span></li>
+              <li><strong>Challenge</strong><span>Processed meeting-analysis jobs asynchronously with Kafka-backed workers and health monitoring to improve throughput and reliability.</span></li>
               <li><strong>Learned</strong><span>Made AI output more trustworthy with audit events, safe logging, SLA views, and visible evidence.</span></li>
             </ul>
             <div class="project-footer">
@@ -142,10 +191,6 @@
           <div class="project-body">
             <p class="project-kicker">Object detection</p>
             <h3>Person, Car, Dog &amp; Bicycle Detector</h3>
-            <p class="project-summary">
-              A Flask web app that serves a YOLO detector for common VOC objects and
-              returns annotated predictions from uploaded images.
-            </p>
             <ul class="project-points project-story">
               <li><strong>Project</strong><span>Built an object-detection demo for <b>person</b>, <b>car</b>, <b>dog</b>, and <b>bicycle</b> recognition.</span></li>
               <li><strong>Result</strong><span>Reached <b>0.9497 mAP@50</b>, <b>0.9368 precision</b>, and <b>0.9120 recall</b> after 100 training epochs.</span></li>
@@ -189,10 +234,6 @@
           <div class="project-body">
             <p class="project-kicker">Computer vision</p>
             <h3>Food Segmentation &amp; Calorie Estimation</h3>
-            <p class="project-summary">
-              A food-image pipeline that estimates portions from segmentation masks and
-              a reference-card scale.
-            </p>
             <ul class="project-points project-story">
               <li><strong>Project</strong><span>Tackled calorie-estimation errors caused by photos missing real-world portion size.</span></li>
               <li><strong>How</strong><span>Trained YOLO11x-seg to segment food and a playing-card reference.</span></li>
@@ -228,10 +269,6 @@
           <div class="project-body">
             <p class="project-kicker">Medical imaging</p>
             <h3>Tumor Image Segmentation</h3>
-            <p class="project-summary">
-              A tumor-region detection project using a U-Net segmentation model with a
-              ResNet-50 encoder.
-            </p>
             <ul class="project-points project-story">
               <li><strong>Project</strong><span>Built a medical-image segmentation pipeline to identify tumor regions pixel by pixel.</span></li>
               <li><strong>How</strong><span>Implemented U-Net-style decoder with ResNet-based variants and CSV image-mask loading.</span></li>
@@ -267,10 +304,6 @@
           <div class="project-body">
             <p class="project-kicker">Deep learning</p>
             <h3>Tumor Image Classification</h3>
-            <p class="project-summary">
-              A CNN classification workflow for evaluating malignant and benign tumor
-              image predictions.
-            </p>
             <ul class="project-points project-story">
               <li><strong>Project</strong><span>Built a PyTorch CNN to classify tumor images as benign or malignant.</span></li>
               <li><strong>How</strong><span>Created CSV-based data loading, binary label mapping, and k-fold validation.</span></li>
